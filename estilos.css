@@ -12,24 +12,27 @@ body {
 
 /* Imagen en el lado izquierdo */
 .side-image-left {
-  position: absolute;  /* Cambio a posición absoluta */
+  position: absolute;  /* Posicionamos la imagen de forma absoluta */
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;  /* Tamaño ajustado de la imagen */
-  height: auto;
-  z-index: -1;  /* Asegura que las imágenes queden detrás del contenido */
+  width: 30px;  /* Reducimos el tamaño */
+  max-width: 30px;  /* Limita el tamaño máximo */
+  height: auto;  /* Mantiene la proporción */
+  z-index: -1;  /* Asegura que las imágenes estén detrás del contenido */
 }
 
 /* Imagen en el lado derecho */
 .side-image-right {
-  position: absolute;  /* Cambio a posición absoluta */
+  position: absolute;  /* Posicionamos la imagen de forma absoluta */
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 50px;  /* Tamaño ajustado de la imagen */
-  height: auto;
-  z-index: -1;  /* Asegura que las imágenes queden detrás del contenido */
+  width: 30px;  /* Reducimos el tamaño */
+  max-width: 30px;  /* Limita el tamaño máximo */
+  height: auto;  /* Mantiene la proporción */
+  z-index: -1;  /* Asegura que las imágenes estén detrás del contenido */
 }
+
 
 
