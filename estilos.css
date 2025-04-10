@@ -4,6 +4,8 @@ body {
   background-color: #e6f7ff;
   color: #003366;
   text-align: center;
+  padding-left: 100px;  /* Para dejar espacio para la imagen izquierda */
+  padding-right: 100px; /* Para dejar espacio para la imagen derecha */
 }
 
 header {
@@ -37,4 +39,26 @@ footer {
   color: white;
   padding: 10px;
   margin-top: 20px;
+}
+
+/* Imagen en el lado izquierdo */
+.side-image-left {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100px;  /* Ajusta el tamaño */
+  height: auto;
+  z-index: 10;  /* Para que esté por encima del contenido */
+}
+
+/* Imagen en el lado derecho */
+.side-image-right {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100px;  /* Ajusta el tamaño */
+  height: auto;
+  z-index: 10;  /* Para que esté por encima del contenido */
 }
