@@ -1,67 +1,35 @@
+/* Estilo global */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #e6f7ff;
   color: #003366;
   text-align: center;
-  padding-left: 100px;  /* Para dejar espacio para la imagen izquierda */
-  padding-right: 100px; /* Para dejar espacio para la imagen derecha */
-}
-
-header {
-  background-color: #0099cc;
-  color: white;
-  padding: 20px;
-}
-
-.logo {
-  width: 300px;
-  margin-bottom: 10px;
-}
-
-.contacto {
-  padding: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
+  padding-left: 50px;  /* Espacio a la izquierda para la imagen */
+  padding-right: 50px; /* Espacio a la derecha para la imagen */
+  position: relative;  /* Asegura que las imágenes se posicionen respecto al body */
 }
 
 /* Imagen en el lado izquierdo */
 .side-image-left {
-  position: fixed;
+  position: absolute;  /* Cambio a posición absoluta */
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 20px;  /* Ajusta el tamaño de la imagen */
+  width: 50px;  /* Tamaño ajustado de la imagen */
   height: auto;
-  z-index: 1;  /* Asegúrate de que las imágenes queden detrás del contenido */
-  margin-left: 10px; /* Ajusta un pequeño margen desde el borde izquierdo */
+  z-index: -1;  /* Asegura que las imágenes queden detrás del contenido */
 }
 
 /* Imagen en el lado derecho */
 .side-image-right {
-  position: fixed;
+  position: absolute;  /* Cambio a posición absoluta */
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 20px;  /* Ajusta el tamaño de la imagen */
+  width: 50px;  /* Tamaño ajustado de la imagen */
   height: auto;
-  z-index: 1;  /* Asegúrate de que las imágenes queden detrás del contenido */
-  margin-right: 10px; /* Ajusta un pequeño margen desde el borde derecho */
+  z-index: -1;  /* Asegura que las imágenes queden detrás del contenido */
 }
+
 
