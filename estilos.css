@@ -47,9 +47,10 @@ footer {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 10px;  /* Ajusta el tamaño */
+  width: 50px;  /* Ajusta el tamaño de la imagen */
   height: auto;
-  z-index: 10;  /* Para que esté por encima del contenido */
+  z-index: 1;  /* Asegúrate de que las imágenes queden detrás del contenido */
+  margin-left: 10px; /* Ajusta un pequeño margen desde el borde izquierdo */
 }
 
 /* Imagen en el lado derecho */
@@ -58,7 +59,9 @@ footer {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 10px;  /* Ajusta el tamaño */
+  width: 50px;  /* Ajusta el tamaño de la imagen */
   height: auto;
-  z-index: 10;  /* Para que esté por encima del contenido */
+  z-index: 1;  /* Asegúrate de que las imágenes queden detrás del contenido */
+  margin-right: 10px; /* Ajusta un pequeño margen desde el borde derecho */
 }
+
