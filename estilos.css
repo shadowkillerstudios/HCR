@@ -1,38 +1,66 @@
-/* Estilo global */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #e6f7ff;
   color: #003366;
   text-align: center;
-  padding-left: 50px;  /* Espacio a la izquierda para la imagen */
-  padding-right: 50px; /* Espacio a la derecha para la imagen */
-  position: relative;  /* Asegura que las imágenes se posicionen respecto al body */
 }
 
-/* Imagen en el lado izquierdo */
-.side-image-left {
-  position: absolute;  /* Posicionamos la imagen de forma absoluta */
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 30px;  /* Reducimos el tamaño */
-  max-width: 30px;  /* Limita el tamaño máximo */
-  height: auto;  /* Mantiene la proporción */
-  z-index: -1;  /* Asegura que las imágenes estén detrás del contenido */
+header {
+  background-color: #0099cc;
+  color: white;
+  padding: 20px;
 }
 
-/* Imagen en el lado derecho */
-.side-image-right {
-  position: absolute;  /* Posicionamos la imagen de forma absoluta */
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 30px;  /* Reducimos el tamaño */
-  max-width: 30px;  /* Limita el tamaño máximo */
-  height: auto;  /* Mantiene la proporción */
-  z-index: -1;  /* Asegura que las imágenes estén detrás del contenido */
+.logo {
+  width: 300px;
+  margin-bottom: 10px;
 }
 
+.contacto {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+body {
+    background-image: url('pipa 1.jpg');
+    background-position: left center;  /* Imagen en el lado izquierdo */
+    background-repeat: no-repeat;
+    background-size: cover;  /* Para cubrir el área completa */
+}
+
+.side-image {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;  /* Ajusta el tamaño */
+    height: auto;
+    z-index: 10;  /* Asegura que la imagen esté por encima del contenido */
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
 
 
