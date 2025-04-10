@@ -43,7 +43,6 @@ body {
     background-image: url('pipa 1.jpg');
     background-position: left center;  /* Imagen en el lado izquierdo */
     background-repeat: no-repeat;
-    background-size: cover;  /* Para cubrir el área completa */
 }
 
 .side-image {
